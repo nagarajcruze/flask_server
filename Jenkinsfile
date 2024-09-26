@@ -4,19 +4,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat('echo The code will be builded in this statge!')
+                sh'echo The code will be builded in this statge!'
             }
         }
 
         stage('Test') {
             steps {
-                bat('echo Test executed!')
+                sh'echo Test executed!'
             }
         }
 
         stage('Deploy') {
             steps {
-                bat('echo Application Deployed to Production!')
+                sh'echo Application Deployed to Production!'
             }
         }
     }
