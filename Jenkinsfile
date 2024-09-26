@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat('echo The code will be builded in this statge!')
+                bat('echo The code will be builded in this statge using nagaraj branch!')
             }
         }
 
