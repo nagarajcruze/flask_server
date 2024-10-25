@@ -1,11 +1,9 @@
-FROM python:3.12.6
+FROM python:3.8-slim
 
 WORKDIR /app
 
-COPY . .
+COPY . /app
 
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
-EXPOSE 5000
-
-CMD ["python3", "flask_server.py"]
+CMD ["python", "flask_server.py"]
