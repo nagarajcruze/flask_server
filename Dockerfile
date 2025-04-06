@@ -1,10 +1,10 @@
 from python:3.12.6
 
-WORKDIR /app
+workdir /app
 
-COPY . .
+copy . .
 
-RUN pip3 install -r requirements.txt
+run pip3 install -r requirements.txt
 
 EXPOSE 5000
 
